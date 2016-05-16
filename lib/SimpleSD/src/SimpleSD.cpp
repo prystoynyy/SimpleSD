@@ -28,18 +28,18 @@ bool SimpleSD::Init(){
 }
 
 bool SimpleSD::IsInit(){
-  return this->isInit_;
+        return this->isInit_;
 }
 
 void SimpleSD::ShowLog(){
-  this->writeLog_ = true;
+        this->writeLog_ = true;
 }
 void SimpleSD::HideLog(){
-  this->writeLog_ = false;
+        this->writeLog_ = false;
 }
 char* SimpleSD::ReadFile(char* fileName){
-  char* resultText = new char[255];
-  return resultText;
+        char* resultText = new char[255];
+        return resultText;
 }
 bool WriteFile(char* fileName, char* data, bool override);
 bool CopyFile(char* orgFileName, char* copyFileName);
