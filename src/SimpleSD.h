@@ -1,3 +1,6 @@
+#ifndef __SimpleSD_H__
+#define __SimpleSD_H__
+
 #include <SPI.h>
 #include <SD.h>
 
@@ -20,3 +23,4 @@ public:
         bool WriteFile(char* fileName, char* data, bool override);
         bool CopyFile(char* orgFileName, char* copyFileName);
 };
+#endif

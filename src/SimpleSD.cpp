@@ -38,8 +38,26 @@ void SimpleSD::HideLog(){
         this->writeLog_ = false;
 }
 char* SimpleSD::ReadFile(char* fileName){
-        char* resultText = new char[255];
+        File file = SD.open(fileName);
+        if(!file) {
+                return "";
+        }
+        int fileSize = file.size();
+        char* resultText = new char[fileSize+1];
+        Serial.println(fileSize);
+        //file.read(resultText, file.size());
+        int i = 0;
+        while (file.available()) {
+                char c = file.read();
+                resultText[i++] = c;
+        }
+        resultText[i] = '\0';
+        file.close();
         return resultText;
 }
-bool WriteFile(char* fileName, char* data, bool override);
-bool CopyFile(char* orgFileName, char* copyFileName);
+bool WriteFile(char* fileName, char* data, bool override){
+        return false;
+}
+bool CopyFile(char* orgFileName, char* copyFileName){
+        return false;
+}
