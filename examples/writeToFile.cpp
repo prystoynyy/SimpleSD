@@ -6,7 +6,7 @@
  *  Writing data to file
  */
 
-char* FILE_NAME = "data.csv";
+char* FILE_NAME = "data4.csv";
 const int CS_PIN = 4;
 
 void setup()
@@ -18,7 +18,7 @@ void setup()
                 return;
         }
 
-        char data[] = {'F', 'O', 'R',' ', 'T', 'E', 'S', 'T'};
+        char data[] = {'F', 'O', 'R',' ', 'T', 'E', 'S', 'T', '\0'};
         if(simpleSD->IsInit()){
            bool isSuccessRecord = simpleSD->WriteFile(FILE_NAME, data, true);
            if(isSuccessRecord){

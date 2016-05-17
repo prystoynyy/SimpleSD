@@ -19,7 +19,7 @@ void setup()
                 return;
         }
         if(simpleSD->IsInit()){
-           bool isSuccessCopy = simpleSD->CopyFile(FILE_NAME, COPY_FILE_NAME)
+           bool isSuccessCopy = simpleSD->CopyFile(FILE_NAME, COPY_FILE_NAME);
            if(isSuccessCopy){
              Serial.println("Copying is success");
            }

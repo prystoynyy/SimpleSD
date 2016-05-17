@@ -1,6 +1,5 @@
 #include "../src/SimpleSD.h"
 #include <SimpleSD.h>
-#include <string.h>
 
 /*
  *  Reading data from file to char* variable
