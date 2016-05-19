@@ -6,7 +6,7 @@ Library for working with SD module
 How use
 -----------------------
 
-**1. Connect joystick module to arduino**:
+**1. Connect SD module to arduino**:
 
 
 <img src="http://www.getmicros.net/wp-content/uploads/2014/01/arduino-and-sdcard_bb.png" height=200>
